@@ -1,0 +1,56 @@
+def Menu() :
+    print('----------------------------------')
+    print("welcome to our Namthom shop")
+    print("Namthom menu")
+    print(" 1 Namthom real ")
+    print(" 2 Namthom + lean")
+    print(" 3 Namthom + Coke ")
+    print('----------------------------------')
+   
+
+def selectmenu(choose) :
+    if choose == "1" :
+        print("You Namthom real")
+    elif choose == "2" :
+        print("You Namthom + lean")
+    elif choose == "3" :
+        print("You Namthom + Coke")
+    else :
+        print("Don't Choose")
+        
+def Size() :
+    Menu()
+    print('********************')
+    print("Glass size")
+    print("Size s => 35")
+    print("Size m => 40")
+    print("Size l => 45")
+    print('********************')
+        
+def calculate(money,a):
+    return money - a
+
+def selecttotal(sizeing,money) :
+    if sizeing == "s" :
+        print("Price 35 Bath")
+        amount = calculate(money,35)
+        print("Your amount ",amount,"Bath")
+    elif sizeing == "m" :
+        print("Price 40 Bath")
+        amount = calculate(money,40)
+        print("Your amount ",amount,"Bath")
+    elif sizeing == "l" :
+        print("Price 45 Bath")
+        amount = calculate(money,45)
+        print("Your amount ",amount,"Bath")
+    else :
+        print("Don't Choose")
+    
+
+Size()
+num = input('Choose menu : ')
+sizeing = input('Glass size : ')
+money = int(input('enter money : '))
+selectmenu(num)
+print("You choose Glass size ",sizeing)
+selecttotal(sizeing,money)

@@ -1,0 +1,7 @@
+1.apple
+2.tomato
+3.pine apple
+4.mango
+5.star fruithello
+
+INSERT INTO Type_Product VALUES ('000003','Laptop');
